@@ -14,7 +14,7 @@ public class WeatherConstants {
 	public static final String OPEN_WEATHER_API_URL="https://api.openweathermap.org/data/2.5/weather?";
 	public static final String QUERY_PARAM_CITYANDCOUNTRY="q=";
 	public static final String QUERY_PARAM_APPID="&appid=";
-	
+	public static final String WEATHER_CONDITION_API_ENDPOINT="/Weather/CurrentCondition";
 	
 	
 	

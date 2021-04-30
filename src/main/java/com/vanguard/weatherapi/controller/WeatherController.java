@@ -5,32 +5,28 @@ import java.util.Map;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
-
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import com.vanguard.weatherapi.exception.WeatherErrorMessage;
 import com.vanguard.weatherapi.exception.WeatherException;
 
 import com.vanguard.weatherapi.model.WeatherResponse;
 import com.vanguard.weatherapi.service.WeatherService;
 import com.vanguard.weatherapi.utility.WeatherConstants;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 
 
 @RestController
+@RequestMapping("/Weather")
 public class WeatherController {
 
 	@Autowired
 	private WeatherService service;
 
 
-	@GetMapping("/Weather")
+	@GetMapping("/CurrentCondition")
 	public WeatherResponse getWeather(@RequestParam Map<String, String> allparams)
 	throws WeatherException
 

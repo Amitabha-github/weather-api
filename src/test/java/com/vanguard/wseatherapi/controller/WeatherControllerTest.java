@@ -68,7 +68,7 @@ public class WeatherControllerTest {
 		paramMap.add(WeatherConstants.REQ_PARAM_CITY, "london");
 		
 		mockMvc
-		.perform(get("/Weather")
+		.perform(get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
@@ -88,7 +88,7 @@ public class WeatherControllerTest {
 		paramMap.add(WeatherConstants.REQ_PARAM_COUNTRY, "IN");
 		
 		mockMvc
-		.perform(get("/Weather")
+		.perform(get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
@@ -106,7 +106,7 @@ public class WeatherControllerTest {
 				//paramMap.add(WeatherConstants.REQ_PARAM_CITY, "london");
 				
 				mockMvc
-				.perform(get("/Weather")
+				.perform(get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 						.params(paramMap)
 						.accept(MediaType.APPLICATION_JSON)
 						)
@@ -124,7 +124,7 @@ public class WeatherControllerTest {
 			//paramMap.add(WeatherConstants.REQ_PARAM_CITY, "london");
 			
 			mockMvc
-			.perform(get("/Weather")
+			.perform(get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 					.params(paramMap)
 					.accept(MediaType.APPLICATION_JSON)
 					)
@@ -143,7 +143,7 @@ public class WeatherControllerTest {
 					paramMap.add(WeatherConstants.REQ_PARAM_CITY, "london");
 					
 					mockMvc
-					.perform(get("/Weather")
+					.perform(get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 							.params(paramMap)
 							.accept(MediaType.APPLICATION_JSON)
 							)

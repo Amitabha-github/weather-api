@@ -52,7 +52,7 @@ class WseatherApiApplicationTests {
 		
 
 		mockMvc
-		.perform(MockMvcRequestBuilders.get("/Weather")
+		.perform(MockMvcRequestBuilders.get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
@@ -73,7 +73,7 @@ class WseatherApiApplicationTests {
 
 
 		mockMvc
-		.perform(MockMvcRequestBuilders.get("/Weather")
+		.perform(MockMvcRequestBuilders.get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
@@ -93,7 +93,7 @@ class WseatherApiApplicationTests {
 
 
 		mockMvc
-		.perform(MockMvcRequestBuilders.get("/Weather")
+		.perform(MockMvcRequestBuilders.get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
@@ -112,7 +112,7 @@ class WseatherApiApplicationTests {
 
 
 		mockMvc
-		.perform(MockMvcRequestBuilders.get("/Weather")
+		.perform(MockMvcRequestBuilders.get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
@@ -132,7 +132,7 @@ class WseatherApiApplicationTests {
 		paramMap.add(WeatherConstants.REQ_PARAM_COUNTRY, "US");
 
 		mockMvc
-		.perform(MockMvcRequestBuilders.get("/Weather")
+		.perform(MockMvcRequestBuilders.get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
@@ -153,7 +153,7 @@ class WseatherApiApplicationTests {
 		for(int count =0; count<5; count++)
 		{
 			mockMvc
-			.perform(MockMvcRequestBuilders.get("/Weather")
+			.perform(MockMvcRequestBuilders.get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 					.params(paramMap)
 					.accept(MediaType.APPLICATION_JSON)
 					)
@@ -162,7 +162,7 @@ class WseatherApiApplicationTests {
 		}
 
 		mockMvc
-		.perform(MockMvcRequestBuilders.get("/Weather")
+		.perform(MockMvcRequestBuilders.get(WeatherConstants.WEATHER_CONDITION_API_ENDPOINT)
 				.params(paramMap)
 				.accept(MediaType.APPLICATION_JSON)
 				)
