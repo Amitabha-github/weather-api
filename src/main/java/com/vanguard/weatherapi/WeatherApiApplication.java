@@ -16,17 +16,17 @@ public class WeatherApiApplication {
 	@Bean
 	public RestTemplate getRestTemplate()
 	{
-		
+
 		return new RestTemplate();
 	}
-	
+
 	@Bean
 	public CommonsRequestLoggingFilter requestLoggingFilter() {
-	    CommonsRequestLoggingFilter loggingFilter = new CommonsRequestLoggingFilter();
-	    loggingFilter.setIncludeClientInfo(true);
-	    loggingFilter.setIncludeQueryString(true);
-	    loggingFilter.setIncludePayload(true);
-	    loggingFilter.setIncludeHeaders(false);
-	    return loggingFilter;
+		CommonsRequestLoggingFilter loggingFilter = new CommonsRequestLoggingFilter();
+		loggingFilter.setIncludeClientInfo(true);
+		loggingFilter.setIncludeQueryString(true);
+		loggingFilter.setIncludePayload(true);
+		loggingFilter.setIncludeHeaders(false);
+		return loggingFilter;
 	}
 }

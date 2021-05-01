@@ -74,9 +74,9 @@ public class WeatherService {
 		String url= new StringBuilder()
 		.append(WeatherConstants.OPEN_WEATHER_API_URL)
 		.append(WeatherConstants.QUERY_PARAM_CITYANDCOUNTRY)
-		.append(cityName)
+		.append(cityName.trim())
 		.append(WeatherConstants.QUERY_PARAM_APPID)
-		.append(appId).toString();
+		.append(appId.trim()).toString();
 
 		restTemplate.setErrorHandler(new WeatherErrorHandler());
 		
