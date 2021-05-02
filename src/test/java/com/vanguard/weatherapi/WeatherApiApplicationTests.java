@@ -1,4 +1,4 @@
-package com.vanguard.wseatherapi;
+package com.vanguard.weatherapi;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -36,7 +36,7 @@ classes = WeatherApiApplication.class
 
 @AutoConfigureMockMvc
 @TestPropertySource(locations = "classpath:application_test.properties")
-class WseatherApiApplicationTests {
+class WeatherApiApplicationTests {
 
 	@Autowired
 	private MockMvc mockMvc;

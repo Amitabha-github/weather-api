@@ -1,4 +1,4 @@
-package com.vanguard.wseatherapi.controller;
+package com.vanguard.weatherapi.controller;
 
 import static org.junit.Assert.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
